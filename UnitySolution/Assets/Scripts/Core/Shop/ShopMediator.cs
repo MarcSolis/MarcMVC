@@ -4,7 +4,7 @@ namespace MarcTest.Shop
 {
     public class ShopMediator
     {
-        public ShopMediator(ShopView view, ShopModel model)
+        public ShopMediator(ShopView view, ShopModel model, OnBuyShopCommand onBuyShopCommand)
         {
             //Initial State
             view.Init(model.Character1Price.Value, model.Character2Price.Value);
@@ -12,7 +12,7 @@ namespace MarcTest.Shop
             //Suscriptions
             view.Char1ButtonClickedEvent.AsObservable().Subscribe(e =>
             {
-                model.Character1Price.Value++;
+                onBuyShopCommand.BuyChar1();
             });
 
             model.Character1Price.AsObservable().Subscribe(value =>
@@ -22,7 +22,7 @@ namespace MarcTest.Shop
 
             view.Char2ButtonClickedEvent.AsObservable().Subscribe(e => 
             {
-                model.Character2Price.Value++;
+                onBuyShopCommand.BuyChar2();
             });
 
             model.Character2Price.AsObservable().Subscribe(value =>

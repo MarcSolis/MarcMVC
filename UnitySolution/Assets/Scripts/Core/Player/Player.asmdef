@@ -1,0 +1,7 @@
+﻿{
+	"name": "Player",
+	"references" : [
+		"UniRx",
+		"Unity.TextMeshPro"
+	]
+}
