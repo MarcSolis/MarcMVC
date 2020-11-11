@@ -3,6 +3,7 @@
 	"references": [
 		"UniRx",
 		"Unity.TextMeshPro",
-		"Command"
+		"Command",
+		"Player"
 	]
 }

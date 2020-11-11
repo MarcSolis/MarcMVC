@@ -1,6 +1,7 @@
 ﻿{
 	"name": "Core",
 	"references": [
-        "Shop"
+        "Shop",
+		"Player"
     ]
 }
