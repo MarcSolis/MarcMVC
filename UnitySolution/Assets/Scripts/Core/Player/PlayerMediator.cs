@@ -16,6 +16,11 @@ namespace MarcTest.Player
             {
                 view.SetCoinsText(value);
             });
+
+            model.Power.AsObservable().Subscribe(value =>
+            {
+                view.SetPowerText(value);
+            });
         }
     }
 }

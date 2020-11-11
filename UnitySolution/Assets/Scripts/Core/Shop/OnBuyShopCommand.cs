@@ -23,6 +23,7 @@ namespace MarcTest.Shop
             if (_playerModel.Coins.Value < _shopModel.Character1Price.Value) return;
             _playerModel.Coins.Value -= _shopModel.Character1Price.Value;
             _shopModel.Character1Price.Value++;
+            _playerModel.Power.Value++;
         }
 
         public void BuyChar2()
@@ -30,6 +31,7 @@ namespace MarcTest.Shop
             if (_playerModel.Coins.Value < _shopModel.Character2Price.Value) return;
             _playerModel.Coins.Value -= _shopModel.Character2Price.Value;
             _shopModel.Character2Price.Value++;
+            _playerModel.Power.Value+=2;
         }
 
     }
