@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 
-namespace MarcTest.Shop
+namespace MarcTest
 {
     public class MainInstaller : MonoBehaviour
     {
-        [SerializeField] private ShopInstaller _shopInstaller;
+        [SerializeField] private Shop.ShopInstaller _shopInstaller;
+        [SerializeField] private Player.PlayerInstaller _playerInstaller;
 
         private void Start()
         {
-            _shopInstaller.Install();
+            var playerModel = new Player.PlayerModel();
+            _playerInstaller.Install(playerModel);
+            _shopInstaller.Install(playerModel);
         }
 
     }

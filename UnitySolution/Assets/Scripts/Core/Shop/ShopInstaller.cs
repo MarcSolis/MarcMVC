@@ -8,10 +8,11 @@ namespace MarcTest.Shop
     {
         [SerializeField] private ShopView _view;
 
-        public void Install()
+        public void Install(Player.PlayerModel playerModel)
         {
             var model = new ShopModel();
-            var mediator = new ShopMediator(_view, model);
+            var command = new OnBuyShopCommand(model, playerModel);
+            var mediator = new ShopMediator(_view, model, command);
         }
 
     }

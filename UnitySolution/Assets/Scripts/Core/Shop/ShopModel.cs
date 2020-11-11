@@ -1,8 +1,7 @@
 ﻿using UniRx;
 
-namespace MarcTest.Shop
-{
-    public class ShopModel
+namespace MarcTest.Shop{
+   public class ShopModel
     {
         public ReactiveProperty<int> Character1Price, Character2Price;
 
