@@ -1,0 +1,8 @@
+﻿{
+	"name": "Shop",
+	"references": [
+		"UniRx",
+		"Unity.TextMeshPro",
+		"Command"
+	]
+}
