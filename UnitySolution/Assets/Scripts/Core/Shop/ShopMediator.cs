@@ -12,7 +12,7 @@ namespace MarcTest.Shop
             //Suscriptions
             view.Char1ButtonClickedEvent.AsObservable().Subscribe(e =>
             {
-                onBuyShopCommand.BuyChar1();
+                onBuyShopCommand.BuyCharacter1();
             });
 
             model.Character1Price.AsObservable().Subscribe(value =>
@@ -22,7 +22,7 @@ namespace MarcTest.Shop
 
             view.Char2ButtonClickedEvent.AsObservable().Subscribe(e => 
             {
-                onBuyShopCommand.BuyChar2();
+                onBuyShopCommand.BuyCharacter2();
             });
 
             model.Character2Price.AsObservable().Subscribe(value =>

@@ -21,12 +21,12 @@ namespace MarcTest.Shop
 
         public void SetChar1Price(int price)
         {
-            _char1Text.text = "Level 1:\n" + price.ToString();
+            _char1Text.text = "Level 1:\n" + price.ToString() + "$";
         }
 
         public void SetChar2Price(int price)
         {
-            _char2Text.text = "Level 2:\n" + price.ToString();
+            _char2Text.text = "Level 2:\n" + price.ToString() + "$";
         }
 
 
