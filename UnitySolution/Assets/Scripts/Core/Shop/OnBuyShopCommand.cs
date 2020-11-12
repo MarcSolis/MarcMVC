@@ -2,29 +2,34 @@
 using MarcTest.Player;
 using UniRx;
 
+
 namespace MarcTest.Shop
 {
     public class OnBuyShopCommand : ICommand
     {
         private readonly ShopModel _shopModel;
         private readonly PlayerModel _playerModel;
-        private readonly ShopModel.Character _targetCharacter;
+        private readonly ShopModel.Character _purchasedCharacter;
 
-        public OnBuyShopCommand(ShopModel shopModel, PlayerModel playerModel, ShopModel.Character targetCharacter)
+        public OnBuyShopCommand(
+            ShopModel shopModel, 
+            PlayerModel playerModel, 
+            ShopModel.Character purchasedCharacter
+            )
         {
             _shopModel = shopModel;
             _playerModel = playerModel;
-            _targetCharacter = targetCharacter;
+            _purchasedCharacter = purchasedCharacter;
         }
 
         public void Execute()
         {
-            if (_playerModel.Coins.Value < _targetCharacter.CharacterPrice.Value) return;
-            _playerModel.Coins.Value -= _targetCharacter.CharacterPrice.Value;
-            _targetCharacter.CharacterPrice.Value++;
-            _playerModel.Power.Value += _targetCharacter.CharacterPower.Value;
+            if (_playerModel.Coins.Value < _purchasedCharacter.CharacterPrice.Value)
+                return;
+            _playerModel.Coins.Value -= _purchasedCharacter.CharacterPrice.Value;
+            _purchasedCharacter.CharacterPrice.Value++;
+            _playerModel.Power.Value += _purchasedCharacter.CharacterPower.Value;
         }
-
     }
 }
 

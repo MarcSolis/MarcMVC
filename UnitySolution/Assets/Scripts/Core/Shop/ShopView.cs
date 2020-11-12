@@ -6,7 +6,6 @@ namespace MarcTest.Shop
 {
     public class ShopView : MonoBehaviour
     {
-
         [SerializeField] private Button _char1Button, _char2Button;
         [SerializeField] private TextMeshProUGUI _char1Text, _char2Text;
 
@@ -28,8 +27,6 @@ namespace MarcTest.Shop
         {
             _char2Text.text = "Level 2:\n" + price.ToString() + "$";
         }
-
-
     }
 }
 

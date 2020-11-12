@@ -44,11 +44,12 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerMediator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/MainInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/OnBuyShopCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopMediator.cs" />
       </list>
@@ -106,6 +107,8 @@
       <workItem from="1605117654861" duration="820000" />
       <workItem from="1605168700494" duration="1012000" />
       <workItem from="1605172138837" duration="2244000" />
+      <workItem from="1605178486472" duration="1095000" />
+      <workItem from="1605181183401" duration="668000" />
     </task>
     <servers />
   </component>
@@ -202,10 +205,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1116" y="427" key="RiderGenerateDialog/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605105006905" />
-    <state x="672" y="436" key="SettingsEditor" timestamp="1605169420022">
+    <state x="672" y="436" key="SettingsEditor" timestamp="1605178951794">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="672" y="436" key="SettingsEditor/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605169420022" />
+    <state x="672" y="436" key="SettingsEditor/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605178951794" />
     <state x="959" y="273" width="642" height="894" key="find.popup" timestamp="1605104961202">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

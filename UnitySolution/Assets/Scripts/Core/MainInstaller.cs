@@ -13,7 +13,6 @@ namespace MarcTest
             _playerInstaller.Install(playerModel);
             _shopInstaller.Install(playerModel);
         }
-
     }
 }
 
