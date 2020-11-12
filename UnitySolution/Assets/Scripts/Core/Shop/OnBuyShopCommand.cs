@@ -1,13 +1,14 @@
 ﻿using Command;
+using MarcTest.Player;
 
 namespace MarcTest.Shop
 {
     public class OnBuyShopCommand : ICommand
     {
-        private ShopModel _shopModel;
-        private Player.PlayerModel _playerModel;
+        private readonly ShopModel _shopModel;
+        private readonly PlayerModel _playerModel;
 
-        public OnBuyShopCommand(ShopModel shopModel, Player.PlayerModel playerModel)
+        public OnBuyShopCommand(ShopModel shopModel, PlayerModel playerModel)
         {
             _shopModel = shopModel;
             _playerModel = playerModel;

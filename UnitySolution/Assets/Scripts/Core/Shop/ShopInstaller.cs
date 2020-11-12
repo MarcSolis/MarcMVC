@@ -12,7 +12,7 @@ namespace MarcTest.Shop
         {
             var model = new ShopModel();
             var command = new OnBuyShopCommand(model, playerModel);
-            var mediator = new ShopMediator(_view, model, command);
+            new ShopMediator(_view, model, command);
           
         }
     }

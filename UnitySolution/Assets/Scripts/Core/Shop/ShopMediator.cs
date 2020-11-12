@@ -15,20 +15,14 @@ namespace MarcTest.Shop
                 onBuyShopCommand.BuyCharacter1();
             });
 
-            model.Character1Price.AsObservable().Subscribe(value =>
-            {
-                view.SetChar1Price(value);
-            });
+            model.Character1Price.AsObservable().Subscribe(view.SetCharacter1Price);
 
             view.Char2ButtonClickedEvent.AsObservable().Subscribe(e => 
             {
                 onBuyShopCommand.BuyCharacter2();
             });
 
-            model.Character2Price.AsObservable().Subscribe(value =>
-            {
-                view.SetChar2Price(value);
-            });
+            model.Character2Price.AsObservable().Subscribe(view.SetCharacter2Price);
 
         }
     }

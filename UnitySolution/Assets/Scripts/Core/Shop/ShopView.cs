@@ -15,16 +15,16 @@ namespace MarcTest.Shop
 
         public void Init(int priceChar1, int priceChar2)
         {
-            SetChar1Price(priceChar1);
-            SetChar2Price(priceChar2);
+            SetCharacter1Price(priceChar1);
+            SetCharacter2Price(priceChar2);
         }
 
-        public void SetChar1Price(int price)
+        public void SetCharacter1Price(int price)
         {
             _char1Text.text = "Level 1:\n" + price.ToString() + "$";
         }
 
-        public void SetChar2Price(int price)
+        public void SetCharacter2Price(int price)
         {
             _char2Text.text = "Level 2:\n" + price.ToString() + "$";
         }

@@ -1450,7 +1450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 581d2e81e1bf76e478135ef0b211616b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coinstText: {fileID: 1201661357}
+  _coinsText: {fileID: 1201661357}
   _powerText: {fileID: 1410202087}
 --- !u!224 &1984044905
 RectTransform:

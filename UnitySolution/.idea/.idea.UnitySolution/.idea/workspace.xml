@@ -42,8 +42,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopMediator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerMediator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/OnBuyShopCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerView.cs" />
       </list>
     </option>
   </component>
@@ -91,6 +98,7 @@
       <workItem from="1605104471786" duration="1017000" />
       <workItem from="1605109943579" duration="1323000" />
       <workItem from="1605117654861" duration="820000" />
+      <workItem from="1605168700494" duration="1012000" />
     </task>
     <servers />
   </component>
@@ -119,13 +127,17 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1116" y="427" key="RiderGenerateDialog/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605105006905" />
-    <state x="782" y="366" key="SettingsEditor" timestamp="1605104831150">
+    <state x="672" y="436" key="SettingsEditor" timestamp="1605169420022">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="782" y="366" key="SettingsEditor/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605104831150" />
+    <state x="672" y="436" key="SettingsEditor/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605169420022" />
     <state x="959" y="273" width="642" height="894" key="find.popup" timestamp="1605104961202">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="959" y="273" width="642" height="894" key="find.popup/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605104961202" />
+    <state x="943" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1605169246697">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="943" y="325" width="672" height="678" key="search.everywhere.popup/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605169246697" />
   </component>
 </project>

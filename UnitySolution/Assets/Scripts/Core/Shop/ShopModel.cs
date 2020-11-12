@@ -3,7 +3,8 @@
 namespace MarcTest.Shop{
    public class ShopModel
     {
-        public ReactiveProperty<int> Character1Price, Character2Price;
+        public readonly ReactiveProperty<int> Character1Price;
+        public readonly ReactiveProperty<int> Character2Price;
 
         public ShopModel()
         {
