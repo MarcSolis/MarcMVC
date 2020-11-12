@@ -42,15 +42,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopMediator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerMediator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/OnBuyShopCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/OnBuyShopCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopMediator.cs" />
       </list>
     </option>
   </component>
@@ -61,6 +61,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34995976" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30008045" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -86,6 +88,10 @@
       </option>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -99,6 +105,7 @@
       <workItem from="1605109943579" duration="1323000" />
       <workItem from="1605117654861" duration="820000" />
       <workItem from="1605168700494" duration="1012000" />
+      <workItem from="1605172138837" duration="2244000" />
     </task>
     <servers />
   </component>
@@ -123,6 +130,74 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="736" y="376" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605170939486">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="736" y="376" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605170939486" />
+    <state width="2517" height="535" key="GridCell.Tab.0.bottom" timestamp="1605171973830">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.0.bottom/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973830" />
+    <state width="2517" height="535" key="GridCell.Tab.0.center" timestamp="1605171973830">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.0.center/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973830" />
+    <state width="2517" height="535" key="GridCell.Tab.0.left" timestamp="1605171973830">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.0.left/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973830" />
+    <state width="2517" height="535" key="GridCell.Tab.0.right" timestamp="1605171973830">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.0.right/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973830" />
+    <state width="2517" height="535" key="GridCell.Tab.1.bottom" timestamp="1605171973830">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.1.bottom/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973830" />
+    <state width="2517" height="535" key="GridCell.Tab.1.center" timestamp="1605171973830">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.1.center/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973830" />
+    <state width="2517" height="535" key="GridCell.Tab.1.left" timestamp="1605171973830">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.1.left/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973830" />
+    <state width="2517" height="535" key="GridCell.Tab.1.right" timestamp="1605171973830">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.1.right/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973830" />
+    <state width="2517" height="535" key="GridCell.Tab.2.bottom" timestamp="1605171973831">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.2.bottom/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973831" />
+    <state width="2517" height="535" key="GridCell.Tab.2.center" timestamp="1605171973830">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.2.center/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973830" />
+    <state width="2517" height="535" key="GridCell.Tab.2.left" timestamp="1605171973830">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.2.left/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973830" />
+    <state width="2517" height="535" key="GridCell.Tab.2.right" timestamp="1605171973831">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.2.right/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973831" />
+    <state width="2517" height="535" key="GridCell.Tab.3.bottom" timestamp="1605171973831">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.3.bottom/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973831" />
+    <state width="2517" height="535" key="GridCell.Tab.3.center" timestamp="1605171973831">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.3.center/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973831" />
+    <state width="2517" height="535" key="GridCell.Tab.3.left" timestamp="1605171973831">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.3.left/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973831" />
+    <state width="2517" height="535" key="GridCell.Tab.3.right" timestamp="1605171973831">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="535" key="GridCell.Tab.3.right/-3840.11.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1605171973831" />
     <state x="1116" y="427" key="RiderGenerateDialog" timestamp="1605105006905">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

@@ -3,16 +3,27 @@
 namespace MarcTest.Shop{
    public class ShopModel
     {
-        public readonly ReactiveProperty<int> Character1Price;
-        public readonly ReactiveProperty<int> Character2Price;
-
-        public ShopModel()
+        public readonly struct Character
         {
-            Character1Price = new ReactiveProperty<int>(10);
-            Character2Price = new ReactiveProperty<int>(20);
+            public readonly ReactiveProperty<int> CharacterPrice;
+            public readonly ReactiveProperty<int> CharacterPower;
+            
+            public Character(int price, int power)
+            {
+                CharacterPrice = new ReactiveProperty<int>(price);
+                CharacterPower = new ReactiveProperty<int>(power);
+            }
         }
 
 
+        public readonly  Character character1;
+        public readonly  Character character2;
+
+        public ShopModel()
+        {
+            character1 = new Character(10, 1);
+            character2 = new Character(20, 2);
+        }
     }
 }
 

@@ -11,8 +11,9 @@ namespace MarcTest.Shop
         public void Install(Player.PlayerModel playerModel)
         {
             var model = new ShopModel();
-            var command = new OnBuyShopCommand(model, playerModel);
-            new ShopMediator(_view, model, command);
+            var onBuyCharacter1Command = new OnBuyShopCommand(model, playerModel, model.character1);
+            var onBuyCharacter2Command = new OnBuyShopCommand(model, playerModel, model.character2);
+            new ShopMediator(_view, model, onBuyCharacter1Command, onBuyCharacter2Command);
           
         }
     }
