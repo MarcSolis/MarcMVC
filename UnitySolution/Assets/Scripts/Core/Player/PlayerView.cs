@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 
 namespace MarcTest.Player
@@ -8,11 +6,12 @@ namespace MarcTest.Player
     public class PlayerView : MonoBehaviour
     {
 
-        [SerializeField] private TextMeshProUGUI _coinstText, _powerText;
+        [SerializeField] private TextMeshProUGUI _coinsText;
+        [SerializeField] private TextMeshProUGUI _powerText;
 
         public void SetCoinsText(int value)
         {
-            _coinstText.text = value.ToString() + " $";
+            _coinsText.text = value.ToString() + " $";
         }
 
         public void SetPowerText(int value)

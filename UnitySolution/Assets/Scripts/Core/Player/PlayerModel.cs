@@ -5,11 +5,12 @@ namespace MarcTest.Player
     public class PlayerModel
     {
 
-        public ReactiveProperty<int> Coins, Power;
+        public readonly ReactiveProperty<int> Coins;
+        public readonly ReactiveProperty<int> Power;
 
         public PlayerModel()
         {
-            Coins = new ReactiveProperty<int>();
+            Coins = new ReactiveProperty<int>(99);
             Power = new ReactiveProperty<int>();
         }
 

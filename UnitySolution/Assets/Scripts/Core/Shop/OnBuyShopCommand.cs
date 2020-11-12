@@ -1,13 +1,14 @@
 ﻿using Command;
+using MarcTest.Player;
 
 namespace MarcTest.Shop
 {
     public class OnBuyShopCommand : ICommand
     {
-        private ShopModel _shopModel;
-        private Player.PlayerModel _playerModel;
+        private readonly ShopModel _shopModel;
+        private readonly PlayerModel _playerModel;
 
-        public OnBuyShopCommand(ShopModel shopModel, Player.PlayerModel playerModel)
+        public OnBuyShopCommand(ShopModel shopModel, PlayerModel playerModel)
         {
             _shopModel = shopModel;
             _playerModel = playerModel;
@@ -18,7 +19,7 @@ namespace MarcTest.Shop
             
         }
 
-        public void BuyChar1()
+        public void BuyCharacter1()
         {
             if (_playerModel.Coins.Value < _shopModel.Character1Price.Value) return;
             _playerModel.Coins.Value -= _shopModel.Character1Price.Value;
@@ -26,7 +27,7 @@ namespace MarcTest.Shop
             _playerModel.Power.Value++;
         }
 
-        public void BuyChar2()
+        public void BuyCharacter2()
         {
             if (_playerModel.Coins.Value < _shopModel.Character2Price.Value) return;
             _playerModel.Coins.Value -= _shopModel.Character2Price.Value;
