@@ -9,12 +9,12 @@ namespace MarcTest.Shop
     {
         private readonly ShopModel _shopModel;
         private readonly PlayerModel _playerModel;
-        private readonly ShopModel.Character _purchasedCharacter;
+        private readonly Character _purchasedCharacter;
 
         public OnBuyShopCommand(
             ShopModel shopModel, 
             PlayerModel playerModel, 
-            ShopModel.Character purchasedCharacter
+            Character purchasedCharacter
             )
         {
             _shopModel = shopModel;
