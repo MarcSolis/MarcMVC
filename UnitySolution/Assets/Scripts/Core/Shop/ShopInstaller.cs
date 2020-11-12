@@ -3,7 +3,6 @@
 
 namespace MarcTest.Shop
 {
-    
     public class ShopInstaller : MonoBehaviour
     {
         [SerializeField] private ShopView _view;
@@ -13,9 +12,7 @@ namespace MarcTest.Shop
             var model = new ShopModel();
             var command = new OnBuyShopCommand(model, playerModel);
             new ShopMediator(_view, model, command);
-          
         }
     }
-    
 }
 

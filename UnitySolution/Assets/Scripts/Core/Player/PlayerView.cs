@@ -5,7 +5,6 @@ namespace MarcTest.Player
 {
     public class PlayerView : MonoBehaviour
     {
-
         [SerializeField] private TextMeshProUGUI _coinsText;
         [SerializeField] private TextMeshProUGUI _powerText;
 

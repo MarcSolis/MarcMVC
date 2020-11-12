@@ -15,30 +15,14 @@ namespace MarcTest.Shop
             _playerModel = playerModel;
         }
 
-        public void Execute(ReactiveProperty<int> character, int power)
+        public void Execute(ReactiveProperty<int> purchasedCharacterPrice, int purchasedCharacterPower)
         {
-            if (_playerModel.Coins.Value < character.Value) return;
-            _playerModel.Coins.Value -= character.Value;
-            character.Value++;
-            _playerModel.Power.Value += power;
+            if (_playerModel.Coins.Value < purchasedCharacterPrice.Value) 
+                return;
+            _playerModel.Coins.Value -= purchasedCharacterPrice.Value;
+            purchasedCharacterPrice.Value++;
+            _playerModel.Power.Value += purchasedCharacterPower;
         }
-
-        public void BuyCharacter1()
-        {
-            if (_playerModel.Coins.Value < _shopModel.Character1Price.Value) return;
-            _playerModel.Coins.Value -= _shopModel.Character1Price.Value;
-            _shopModel.Character1Price.Value++;
-            _playerModel.Power.Value++;
-        }
-
-        public void BuyCharacter2()
-        {
-            if (_playerModel.Coins.Value < _shopModel.Character2Price.Value) return;
-            _playerModel.Coins.Value -= _shopModel.Character2Price.Value;
-            _shopModel.Character2Price.Value++;
-            _playerModel.Power.Value+=2;
-        }
-
     }
 }
 

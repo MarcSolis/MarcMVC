@@ -42,15 +42,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerMediator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/MainInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Player/PlayerView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/OnBuyShopCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/ShopMediator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Shop/OnBuyShopCommand.cs" />
       </list>
     </option>
   </component>
@@ -79,10 +80,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="15100">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="15100" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
