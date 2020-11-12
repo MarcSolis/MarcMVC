@@ -6,20 +6,18 @@ namespace MarcTest.Shop
     {
         public ShopMediator(ShopView view, ShopModel model, OnBuyShopCommand onBuyShopCommand)
         {
-            //Initial State
             view.Init(model.Character1Price.Value, model.Character2Price.Value);
-
-            //Suscriptions
+            
             view.Char1ButtonClickedEvent.AsObservable().Subscribe(e =>
             {
-                onBuyShopCommand.BuyCharacter1();
+                onBuyShopCommand.Execute(model.Character1Price, 1);
             });
 
             model.Character1Price.AsObservable().Subscribe(view.SetCharacter1Price);
 
-            view.Char2ButtonClickedEvent.AsObservable().Subscribe(e => 
+            view.Char2ButtonClickedEvent.AsObservable().Subscribe(e =>
             {
-                onBuyShopCommand.BuyCharacter2();
+                onBuyShopCommand.Execute(model.Character2Price, 2);
             });
 
             model.Character2Price.AsObservable().Subscribe(view.SetCharacter2Price);
