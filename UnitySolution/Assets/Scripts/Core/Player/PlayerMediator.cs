@@ -12,10 +12,7 @@ namespace MarcTest.Player
             model.Coins.Value = STARTING_COINS;
 
             //Suscriptions
-            model.Coins.AsObservable().Subscribe(value =>
-            {
-                view.SetCoinsText(value);
-            });
+            model.Coins.AsObservable().Subscribe(view.SetCoinsText);
 
             model.Power.AsObservable().Subscribe(value =>
             {
