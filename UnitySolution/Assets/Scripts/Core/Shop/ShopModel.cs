@@ -4,7 +4,7 @@ namespace MarcTest.Shop
 {
     public class ShopModel
     {
-       public readonly Character[] characters;
+        public readonly Character[] characters;
        
         public ShopModel(Character[] characters)
         {
@@ -24,4 +24,3 @@ namespace MarcTest.Shop
         }
     }
 }
-
