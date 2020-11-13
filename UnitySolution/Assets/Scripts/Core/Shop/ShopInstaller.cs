@@ -7,10 +7,9 @@ namespace MarcTest.Shop
     {
         [SerializeField] private ShopView _view;
 
-        public void Install(PlayerModel playerModel)
+        public void Install(Character[] serverCharacters, PlayerModel playerModel)
         {
-            var model = new ShopModel(new [] { new Character(10, 1), new Character(20, 2)});
-
+            var model = new ShopModel(serverCharacters);
             var onBuyCharacterCommands = new OnBuyShopCommand[model.characters.Length];
             for (int i = 0; i < onBuyCharacterCommands.Length; i++)
             {
@@ -20,4 +19,3 @@ namespace MarcTest.Shop
         }
     }
 }
-

@@ -386,6 +386,10 @@
               <e p="PlayerModel.cs" t="Include" />
               <e p="PlayerView.cs" t="Include" />
             </e>
+            <e p="ServerScriptableObject" t="Include">
+              <e p="Server.asmdef" t="Include" />
+              <e p="ServerDataScriptableObject.cs" t="Include" />
+            </e>
             <e p="Shop" t="Include">
               <e p="OnBuyShopCommand.cs" t="Include" />
               <e p="Shop.asmdef" t="Include" />
@@ -402,6 +406,7 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Player.csproj" t="IncludeRecursive" />
+      <e p="Server.csproj" t="IncludeRecursive" />
       <e p="Shop.csproj" t="IncludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="UniRx.Async.csproj" t="IncludeRecursive" />

@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using TMPro;
 using UniRx;
+using System;
 
 namespace MarcTest.Shop
 {
@@ -18,15 +19,14 @@ namespace MarcTest.Shop
             }
         }
 
-        public void SetCharacterPrice(int price, int level)
+        public void SetCharacterPrice(int price, int index)
         {
-            _charactersText[level].text = $"Level {level}:\n{price}$";
+            _charactersText[index].text = $"Level {index+1}:\n{price}$";
         }
 
-        public System.IObservable<UniRx.Unit> CharacterButtonObservableClickedEvent(int index)
+        public IObservable<Unit> CharacterButtonObservableClickedEvent(int index)
         {
             return _charactersBuyButton[index].onClick.AsObservable();
         }
     }
 }
-

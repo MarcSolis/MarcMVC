@@ -2,6 +2,7 @@
 	"name": "Core",
 	"references": [
         "Shop",
-		"Player"
+		"Player",
+		"Server"
     ]
 }
