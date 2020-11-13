@@ -6,9 +6,9 @@ namespace MarcTest.Shop
     {
        public readonly Character[] characters;
        
-        public ShopModel()
+        public ShopModel(Character[] characters)
         {
-            characters = new [] { new Character(10, 1), new Character(20, 2) };
+            this.characters = characters;
         }
     }
     

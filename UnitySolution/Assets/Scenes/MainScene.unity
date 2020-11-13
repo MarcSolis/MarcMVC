@@ -1330,10 +1330,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32f4d2d01797d6940bf2307fbb266879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _char1Button: {fileID: 73202429}
-  _char2Button: {fileID: 505541299}
-  _char1Text: {fileID: 727763339}
-  _char2Text: {fileID: 944349732}
+  _charactersBuyButton:
+  - {fileID: 73202429}
+  - {fileID: 505541299}
+  _charactersText:
+  - {fileID: 727763339}
+  - {fileID: 944349732}
+  charactersButtonClickedEvent: []
 --- !u!224 &1759842751
 RectTransform:
   m_ObjectHideFlags: 0

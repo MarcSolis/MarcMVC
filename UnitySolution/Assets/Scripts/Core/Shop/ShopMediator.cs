@@ -7,27 +7,41 @@ namespace MarcTest.Shop
         public ShopMediator(
             ShopView view, 
             ShopModel model, 
-            OnBuyShopCommand onBuyCharacter1Command, 
-            OnBuyShopCommand onBuyCharacter2Command
-            )
+            OnBuyShopCommand[] onBuyCharacterCommands
+        )
         {
-            view.Init(model.characters[0].CharacterPrice.Value, model.characters[1].CharacterPrice.Value);
-            
-            view.Char1ButtonClickedEvent.AsObservable().Subscribe(e =>
+            int[] charactersPrices = new int [model.characters.Length];
+            for (int i = 0; i < charactersPrices.Length; i++)
             {
-                onBuyCharacter1Command.Execute();
-            });
+                charactersPrices[i] = model.characters[i].CharacterPrice.Value;
+            }
             
-            model.characters[0].CharacterPrice.AsObservable().Subscribe(view.SetCharacter1Price);
-            
-            view.Char2ButtonClickedEvent.AsObservable().Subscribe(e => 
-            {
-                onBuyCharacter2Command.Execute();
-            });
-            
-            model.characters[1].CharacterPrice.AsObservable().Subscribe(view.SetCharacter2Price);
+            view.Init(charactersPrices);
 
+            for (var i = 0; i < onBuyCharacterCommands.Length; i++)
+            {
+                SuscribeToCharacterButtonAndPrice(view, model, onBuyCharacterCommands, i);
+            }
+        }
+        
+        private void SuscribeToCharacterButtonAndPrice(
+            ShopView view,
+            ShopModel model, 
+            OnBuyShopCommand[] onBuyCharacterCommands, 
+            int index
+        )
+        {
+            view.CharacterButtonObservableClickedEvent(index).Subscribe(e =>
+            {
+                onBuyCharacterCommands[index].Execute();
+            });
+            
+            model.characters[index].CharacterPrice.AsObservable().Subscribe(price =>
+            {
+                view.SetCharacterPrice(price, index);
+            });
         }
     }
+
 }
 

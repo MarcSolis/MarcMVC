@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using MarcTest.Player;
 
 namespace MarcTest.Shop
 {
@@ -6,12 +7,16 @@ namespace MarcTest.Shop
     {
         [SerializeField] private ShopView _view;
 
-        public void Install(Player.PlayerModel playerModel)
+        public void Install(PlayerModel playerModel)
         {
-            var model = new ShopModel();
-            var onBuyCharacter1Command = new OnBuyShopCommand(model, playerModel, model.characters[0] );
-            var onBuyCharacter2Command = new OnBuyShopCommand(model, playerModel, model.characters[1]);
-            new ShopMediator(_view, model, onBuyCharacter1Command, onBuyCharacter2Command);
+            var model = new ShopModel(new [] { new Character(10, 1), new Character(20, 2)});
+
+            var onBuyCharacterCommands = new OnBuyShopCommand[model.characters.Length];
+            for (int i = 0; i < onBuyCharacterCommands.Length; i++)
+            {
+                onBuyCharacterCommands[i] = new OnBuyShopCommand(playerModel, model.characters[i]);
+            }
+            new ShopMediator(_view, model, onBuyCharacterCommands);
         }
     }
 }
