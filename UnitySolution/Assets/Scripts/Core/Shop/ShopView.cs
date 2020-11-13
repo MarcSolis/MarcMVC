@@ -12,7 +12,7 @@ namespace MarcTest.Shop
 
         public void Init(int[] characterPrices)
         {
-            for (int i = 0; i < characterPrices.Length; i++)
+            for (var i = 0; i < characterPrices.Length; i++)
             {
                 SetCharacterPrice(characterPrices[i], i);
             }
@@ -20,7 +20,7 @@ namespace MarcTest.Shop
 
         public void SetCharacterPrice(int price, int level)
         {
-            _charactersText[level].text = $"Level {level.ToString()}:\n{price.ToString()}$";
+            _charactersText[level].text = $"Level {level}:\n{price}$";
         }
 
         public System.IObservable<UniRx.Unit> CharacterButtonObservableClickedEvent(int index)
