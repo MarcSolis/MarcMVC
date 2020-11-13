@@ -9,11 +9,10 @@ namespace MarcTest
 
         private void Start()
         {
-            var playerModel = new Player.PlayerModel();
+            var playerModel = new Player.PlayerModel(99);
             _playerInstaller.Install(playerModel);
             _shopInstaller.Install(playerModel);
         }
-
     }
 }
 

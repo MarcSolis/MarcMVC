@@ -1,18 +1,27 @@
 ﻿using UniRx;
 
-namespace MarcTest.Shop{
-   public class ShopModel
+namespace MarcTest.Shop
+{
+    public class ShopModel
     {
-        public readonly ReactiveProperty<int> Character1Price;
-        public readonly ReactiveProperty<int> Character2Price;
-
-        public ShopModel()
+       public readonly Character[] characters;
+       
+        public ShopModel(Character[] characters)
         {
-            Character1Price = new ReactiveProperty<int>(10);
-            Character2Price = new ReactiveProperty<int>(20);
+            this.characters = characters;
         }
+    }
+    
+    public struct Character
+    {
+        public readonly ReactiveProperty<int> CharacterPrice;
+        public readonly ReactiveProperty<int> CharacterPower;
 
-
+        public Character(int price, int power)
+        {
+            CharacterPrice = new ReactiveProperty<int>(price);
+            CharacterPower = new ReactiveProperty<int>(power);
+        }
     }
 }
 

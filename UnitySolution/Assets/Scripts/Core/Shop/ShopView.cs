@@ -1,35 +1,32 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UniRx;
 
 namespace MarcTest.Shop
 {
     public class ShopView : MonoBehaviour
     {
+        [SerializeField] private Button[] _charactersBuyButton;
+        [SerializeField] private TextMeshProUGUI[] _charactersText;
 
-        [SerializeField] private Button _char1Button, _char2Button;
-        [SerializeField] private TextMeshProUGUI _char1Text, _char2Text;
-
-        public Button.ButtonClickedEvent Char1ButtonClickedEvent => _char1Button.onClick;
-        public Button.ButtonClickedEvent Char2ButtonClickedEvent => _char2Button.onClick;
-
-        public void Init(int priceChar1, int priceChar2)
+        public void Init(int[] characterPrices)
         {
-            SetCharacter1Price(priceChar1);
-            SetCharacter2Price(priceChar2);
+            for (var i = 0; i < characterPrices.Length; i++)
+            {
+                SetCharacterPrice(characterPrices[i], i);
+            }
         }
 
-        public void SetCharacter1Price(int price)
+        public void SetCharacterPrice(int price, int level)
         {
-            _char1Text.text = "Level 1:\n" + price.ToString() + "$";
+            _charactersText[level].text = $"Level {level}:\n{price}$";
         }
 
-        public void SetCharacter2Price(int price)
+        public System.IObservable<UniRx.Unit> CharacterButtonObservableClickedEvent(int index)
         {
-            _char2Text.text = "Level 2:\n" + price.ToString() + "$";
+            return _charactersBuyButton[index].onClick.AsObservable();
         }
-
-
     }
 }
 

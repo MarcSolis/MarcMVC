@@ -4,16 +4,14 @@ namespace MarcTest.Player
 {
     public class PlayerModel
     {
-
         public readonly ReactiveProperty<int> Coins;
         public readonly ReactiveProperty<int> Power;
 
-        public PlayerModel()
+        public PlayerModel(int startCoins)
         {
-            Coins = new ReactiveProperty<int>(99);
+            Coins = new ReactiveProperty<int>(startCoins);
             Power = new ReactiveProperty<int>();
         }
-
     }
 }
 
