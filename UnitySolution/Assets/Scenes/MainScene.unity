@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.06132078, g: 1, b: 0.35782343, a: 1}
+  m_Color: {r: 0.40334642, g: 0.8301887, b: 0.5372927, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1330,10 +1330,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32f4d2d01797d6940bf2307fbb266879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _char1Button: {fileID: 73202429}
-  _char2Button: {fileID: 505541299}
-  _char1Text: {fileID: 727763339}
-  _char2Text: {fileID: 944349732}
+  _charactersBuyButton:
+  - {fileID: 73202429}
+  - {fileID: 505541299}
+  _charactersText:
+  - {fileID: 727763339}
+  - {fileID: 944349732}
 --- !u!224 &1759842751
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1450,7 +1452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 581d2e81e1bf76e478135ef0b211616b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coinstText: {fileID: 1201661357}
+  _coinsText: {fileID: 1201661357}
   _powerText: {fileID: 1410202087}
 --- !u!224 &1984044905
 RectTransform:
@@ -1504,6 +1506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shopInstaller: {fileID: 1222608609}
   _playerInstaller: {fileID: 520592741}
+  serverData: {fileID: 11400000, guid: 246fac9459246bc4cb19df1e61276190, type: 2}
 --- !u!4 &2022567842
 Transform:
   m_ObjectHideFlags: 0

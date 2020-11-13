@@ -1,20 +1,21 @@
 ﻿using UnityEngine;
-
+using MarcTest.Player;
 
 namespace MarcTest.Shop
 {
-    
     public class ShopInstaller : MonoBehaviour
     {
         [SerializeField] private ShopView _view;
 
-        public void Install(Player.PlayerModel playerModel)
+        public void Install(Character[] serverCharacters, PlayerModel playerModel)
         {
-            var model = new ShopModel();
-            var command = new OnBuyShopCommand(model, playerModel);
-            var mediator = new ShopMediator(_view, model, command);
+            var model = new ShopModel(serverCharacters);
+            var onBuyCharacterCommands = new OnBuyShopCommand[model.characters.Length];
+            for (int i = 0; i < onBuyCharacterCommands.Length; i++)
+            {
+                onBuyCharacterCommands[i] = new OnBuyShopCommand(playerModel, model.characters[i]);
+            }
+            new ShopMediator(_view, model, onBuyCharacterCommands);
         }
-
     }
 }
-
