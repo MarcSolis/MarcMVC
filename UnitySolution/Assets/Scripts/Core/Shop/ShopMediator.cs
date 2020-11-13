@@ -1,4 +1,5 @@
 ﻿using UniRx;
+using UnityEngine;
 
 namespace MarcTest.Shop
 {
@@ -20,28 +21,20 @@ namespace MarcTest.Shop
 
             for (var i = 0; i < onBuyCharacterCommands.Length; i++)
             {
-                SuscribeToCharacterButtonAndPrice(view, model, onBuyCharacterCommands, i);
+                var index = i;
+                
+                view.CharacterButtonObservableClickedEvent(index).Subscribe(e =>
+                {
+                    onBuyCharacterCommands[index].Execute();
+                });
+        
+                model.characters[index].CharacterPrice.AsObservable().Subscribe(price =>
+                {
+                    view.SetCharacterPrice(price, index);
+                });
+                
             }
         }
-        
-        private void SuscribeToCharacterButtonAndPrice(
-            ShopView view,
-            ShopModel model, 
-            OnBuyShopCommand[] onBuyCharacterCommands, 
-            int index
-        )
-        {
-            view.CharacterButtonObservableClickedEvent(index).Subscribe(e =>
-            {
-                onBuyCharacterCommands[index].Execute();
-            });
-            
-            model.characters[index].CharacterPrice.AsObservable().Subscribe(price =>
-            {
-                view.SetCharacterPrice(price, index);
-            });
-        }
     }
-
 }
 
