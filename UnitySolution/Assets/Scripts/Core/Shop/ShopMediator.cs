@@ -1,5 +1,4 @@
 ﻿using UniRx;
-using UnityEngine;
 
 namespace MarcTest.Shop
 {
@@ -12,7 +11,8 @@ namespace MarcTest.Shop
         )
         {
             int[] charactersPrices = new int [model.characters.Length];
-            for (int i = 0; i < charactersPrices.Length; i++)
+  
+            for (var i = 0; i < charactersPrices.Length; i++)
             {
                 charactersPrices[i] = model.characters[i].CharacterPrice.Value;
             }
@@ -30,9 +30,8 @@ namespace MarcTest.Shop
         
                 model.characters[index].CharacterPrice.AsObservable().Subscribe(price =>
                 {
-                    view.SetCharacterPrice(price, index);
+                    view.SetCharacterPrice(price, index+1);
                 });
-                
             }
         }
     }
